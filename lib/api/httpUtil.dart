@@ -46,7 +46,7 @@ class HttpUtil {
     //Cookie管理
     // dio.interceptors.add(CookieManager(CookieJar()));
 
-    //添加拦截器
+    //添加拦截器 
     dio.interceptors.add(InterceptorsWrapper(onRequest: (RequestOptions options) async {
       bool connectivityResult = await Utils.isConnected();
       if (!connectivityResult) {
@@ -58,27 +58,12 @@ class HttpUtil {
       SharedPreferUtil sp;
 
       sp = await SharedPreferUtil.getInstance();
-      bool hasCtoken = sp.hasKey('token');
-      if (hasCtoken){
+      bool hasToken = sp.hasKey('token');
+      if (hasToken){
         sp = await SharedPreferUtil.getInstance();
-        String ctoken = sp.getString('token');
+        String token = sp.getString('token');
 
-        options.headers.addAll({"ctoken": ctoken});
-      }
-
-      sp = await SharedPreferUtil.getInstance();
-      bool hasCid = sp.hasKey('cid');
-      if (hasCid) {
-         sp = await SharedPreferUtil.getInstance();
-        String cid = sp.getString('cid');
-        options.headers.addAll({"cid": cid});
-      }
-
-      bool hasCityCode = sp.hasKey('cityItem');
-      if (hasCityCode) {
-        String cityVal = sp.getString('cityItem');
-        String cityCode = Utils.stringToJson(cityVal)["cityCode"];
-        options.headers.addAll({"cCode": cityCode});
+        options.headers.addAll({"token": token});
       }
       
       // print(options.headers);
