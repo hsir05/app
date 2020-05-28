@@ -64,7 +64,7 @@ class _BottomPageState extends State<BottomPage> {
                 child: Image.asset('assets/scanCode.png',  fit: BoxFit.contain, width: ScreenUtil().getAdapterSize(50),),
                 onPressed: (){
                   String url = 'https://card.wecity.qq.com/v2/scan-code-nhsa?channel=AAEwpn9iWhdOrG3uhOfrF7Dd';
-                  Application.router.navigateTo(context, "/webview?title=" + Uri.encodeComponent('医保电子凭证') + '&webViewUrl=' +Uri.encodeComponent(url), transition: TransitionType.inFromRight);
+                  Application.router.navigateTo(context, "/webview?title=" + Uri.encodeComponent('凭证') + '&webViewUrl=' +Uri.encodeComponent(url), transition: TransitionType.inFromRight);
                 },
                 elevation: 0,
                 backgroundColor: Colors.transparent,
@@ -97,7 +97,7 @@ class _BottomPageState extends State<BottomPage> {
               
               BottomNavigationBarItem(
                 icon: Icon(Icons.add_circle, color: Colors.transparent,),
-                title: Text('医保电子凭证', style: TextStyle(fontSize: 12.0, color:Color(0xffc3c5cd)),),
+                title: Text('凭证', style: TextStyle(fontSize: 12.0, color:Color(0xffc3c5cd)),),
               ),
 
                 BottomNavigationBarItem(
