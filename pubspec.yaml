@@ -26,6 +26,9 @@ dependencies:
   dio: ^3.0.9
   shared_preferences: ^0.5.5
   connectivity: ^0.4.6
+  transparent_image: ^1.0.0 # 占位图片动画
+  fluro: ^1.5.1 
+  flustars: ^0.2.6+1 
 
 dev_dependencies:
   flutter_test:
