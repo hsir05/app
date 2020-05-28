@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider.value(value: UserInfoState()),
       ],
       child: MaterialApp(
-          title:'甘肃医保服务平台',
+          title:'平台',
           debugShowCheckedModeBanner: false,
           onGenerateRoute: Application.router.generator,
           theme: ThemeData(
