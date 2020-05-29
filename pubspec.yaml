@@ -57,6 +57,7 @@ flutter:
     - assets/my-active.png
     - assets/my.png
     - assets/scanCode.png
+    - assets/splash.jpg
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
