@@ -6,8 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 // void getStr() async {
 //    sp = await SharedPreferUtil.getInstance();
 //     String ctoken = sp.getString('ctoken');
-//      print('------------------');
-//     print("json $ctoken");
+//  
 // }
 
 /// 用来做shared_preferences的存储 
