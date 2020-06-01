@@ -63,8 +63,7 @@ class _BottomPageState extends State<BottomPage> {
                 mini: true, 
                 child: Image.asset('assets/scanCode.png',  fit: BoxFit.contain, width: ScreenUtil().getAdapterSize(50),),
                 onPressed: (){
-                  // String url = 'https://card.wecity.qq.com/v2/scan-code-nhsa?channel=AAEwpn9iWhdOrG3uhOfrF7Dd';
-                  // Application.router.navigateTo(context, "/webview?title=" + Uri.encodeComponent('凭证') + '&webViewUrl=' +Uri.encodeComponent(url), transition: TransitionType.inFromRight);
+                  print(222);
                 },
                 elevation: 0,
                 backgroundColor: Colors.transparent,
